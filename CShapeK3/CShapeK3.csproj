@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4F1C3D60-B1BE-4ACC-BA66-BD1406E00A65}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HelloK3</RootNamespace>
-    <AssemblyName>HelloK3</AssemblyName>
+    <RootNamespace>CShapeK3</RootNamespace>
+    <AssemblyName>CShapeK3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -82,7 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chuoi.cs" />
+    <Compile Include="ClassArray.cs" />
+    <Compile Include="ClassDictionary.cs" />
     <Compile Include="Condition.cs" />
+    <Compile Include="ListCollection.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
