@@ -19,7 +19,6 @@ namespace CoffeShop
         public CoffeeShop()
         {
             InitializeComponent();
-            ReadData read = new ReadData(Application.StartupPath + "\\file");
         }
 
         private void CoffeeShop_Load(object sender, EventArgs e)
@@ -106,7 +105,7 @@ namespace CoffeShop
 
         private void imgPerson_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
         private void CalculatorTotoalPrice()
         {
