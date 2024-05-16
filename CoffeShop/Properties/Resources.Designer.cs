@@ -93,6 +93,16 @@ namespace CoffeShop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chart {
+            get {
+                object obj = ResourceManager.GetObject("Chart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Close {
             get {
                 object obj = ResourceManager.GetObject("Close", resourceCulture);
@@ -106,6 +116,26 @@ namespace CoffeShop.Properties {
         internal static System.Drawing.Bitmap CloseButton {
             get {
                 object obj = ResourceManager.GetObject("CloseButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Database {
+            get {
+                object obj = ResourceManager.GetObject("Database", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eye {
+            get {
+                object obj = ResourceManager.GetObject("Eye", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +183,9 @@ namespace CoffeShop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap person {
+        internal static System.Drawing.Bitmap Person {
             get {
-                object obj = ResourceManager.GetObject("person", resourceCulture);
+                object obj = ResourceManager.GetObject("Person", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +266,16 @@ namespace CoffeShop.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visualy_Impaired {
+            get {
+                object obj = ResourceManager.GetObject("Visualy_Impaired", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

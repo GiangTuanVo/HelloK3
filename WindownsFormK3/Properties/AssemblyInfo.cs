@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CoffeShop")]
+[assembly: AssemblyTitle("WindownsFormK3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CoffeShop")]
+[assembly: AssemblyProduct("WindownsFormK3")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("42d26c25-292b-4ca8-81c0-221c1cfa4e3f")]
+[assembly: Guid("5f3f63df-4928-4d1c-a2d1-af99b8c25542")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -32,11 +32,19 @@ namespace CoffeShop
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CoffeeShop));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.imgPerson = new Bunifu.UI.WinForms.BunifuPictureBox();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPerson = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.btnUser = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.bunifuIconButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.bunifuIconButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -86,7 +94,7 @@ namespace CoffeShop
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             bunifuPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPerson)).BeginInit();
+            this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.bunifuPanel4.SuspendLayout();
@@ -114,30 +122,171 @@ namespace CoffeShop
             bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             bunifuPanel1.BorderRadius = 55;
             bunifuPanel1.BorderThickness = 1;
-            bunifuPanel1.Controls.Add(this.imgPerson);
+            bunifuPanel1.Controls.Add(this.tableLayoutPanel13);
             bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             bunifuPanel1.Name = "bunifuPanel1";
+            bunifuPanel1.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
             bunifuPanel1.ShowBorders = true;
             bunifuPanel1.Size = new System.Drawing.Size(70, 1000);
             bunifuPanel1.TabIndex = 0;
             // 
-            // imgPerson
+            // tableLayoutPanel13
             // 
-            this.imgPerson.AllowFocused = false;
-            this.imgPerson.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgPerson.AutoSizeHeight = true;
-            this.imgPerson.BorderRadius = 27;
-            this.imgPerson.Image = global::CoffeShop.Properties.Resources.person;
-            this.imgPerson.IsCircle = true;
-            this.imgPerson.Location = new System.Drawing.Point(7, 9);
-            this.imgPerson.Name = "imgPerson";
-            this.imgPerson.Size = new System.Drawing.Size(55, 55);
-            this.imgPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgPerson.TabIndex = 0;
-            this.imgPerson.TabStop = false;
-            this.imgPerson.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.imgPerson.Click += new System.EventHandler(this.imgPerson_Click);
+            this.tableLayoutPanel13.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel13.ColumnCount = 1;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.Controls.Add(this.btnPerson, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(this.btnUser, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.bunifuIconButton1, 0, 2);
+            this.tableLayoutPanel13.Controls.Add(this.bunifuIconButton2, 0, 3);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(0, 7);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 5;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(70, 373);
+            this.tableLayoutPanel13.TabIndex = 0;
+            // 
+            // btnPerson
+            // 
+            this.btnPerson.AllowAnimations = true;
+            this.btnPerson.AllowBorderColorChanges = true;
+            this.btnPerson.AllowMouseEffects = true;
+            this.btnPerson.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPerson.AnimationSpeed = 200;
+            this.btnPerson.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerson.BackgroundColor = System.Drawing.Color.White;
+            this.btnPerson.BorderColor = System.Drawing.Color.White;
+            this.btnPerson.BorderRadius = 1;
+            this.btnPerson.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnPerson.BorderThickness = 1;
+            this.btnPerson.ColorContrastOnClick = 30;
+            this.btnPerson.ColorContrastOnHover = 30;
+            this.btnPerson.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnPerson.CustomizableEdges = borderEdges1;
+            this.btnPerson.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPerson.Image = global::CoffeShop.Properties.Resources.Person;
+            this.btnPerson.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnPerson.Location = new System.Drawing.Point(7, 0);
+            this.btnPerson.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPerson.Name = "btnPerson";
+            this.btnPerson.RoundBorders = true;
+            this.btnPerson.ShowBorders = true;
+            this.btnPerson.Size = new System.Drawing.Size(55, 55);
+            this.btnPerson.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnPerson.TabIndex = 1;
+            this.btnPerson.Click += new System.EventHandler(this.btnPerson_Click);
+            // 
+            // btnUser
+            // 
+            this.btnUser.AllowAnimations = true;
+            this.btnUser.AllowBorderColorChanges = true;
+            this.btnUser.AllowMouseEffects = true;
+            this.btnUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUser.AnimationSpeed = 200;
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.BackgroundColor = System.Drawing.Color.White;
+            this.btnUser.BorderColor = System.Drawing.Color.White;
+            this.btnUser.BorderRadius = 1;
+            this.btnUser.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnUser.BorderThickness = 1;
+            this.btnUser.ColorContrastOnClick = 30;
+            this.btnUser.ColorContrastOnHover = 30;
+            this.btnUser.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnUser.CustomizableEdges = borderEdges2;
+            this.btnUser.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUser.Image = global::CoffeShop.Properties.Resources.password;
+            this.btnUser.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnUser.Location = new System.Drawing.Point(7, 65);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.RoundBorders = true;
+            this.btnUser.ShowBorders = true;
+            this.btnUser.Size = new System.Drawing.Size(55, 55);
+            this.btnUser.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnUser.TabIndex = 0;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // bunifuIconButton1
+            // 
+            this.bunifuIconButton1.AllowAnimations = true;
+            this.bunifuIconButton1.AllowBorderColorChanges = true;
+            this.bunifuIconButton1.AllowMouseEffects = true;
+            this.bunifuIconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuIconButton1.AnimationSpeed = 200;
+            this.bunifuIconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuIconButton1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuIconButton1.BorderColor = System.Drawing.Color.White;
+            this.bunifuIconButton1.BorderRadius = 1;
+            this.bunifuIconButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.bunifuIconButton1.BorderThickness = 1;
+            this.bunifuIconButton1.ColorContrastOnClick = 30;
+            this.bunifuIconButton1.ColorContrastOnHover = 30;
+            this.bunifuIconButton1.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuIconButton1.CustomizableEdges = borderEdges3;
+            this.bunifuIconButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuIconButton1.Image = global::CoffeShop.Properties.Resources.Database;
+            this.bunifuIconButton1.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.bunifuIconButton1.Location = new System.Drawing.Point(7, 140);
+            this.bunifuIconButton1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.bunifuIconButton1.Name = "bunifuIconButton1";
+            this.bunifuIconButton1.RoundBorders = true;
+            this.bunifuIconButton1.ShowBorders = true;
+            this.bunifuIconButton1.Size = new System.Drawing.Size(55, 55);
+            this.bunifuIconButton1.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.bunifuIconButton1.TabIndex = 0;
+            this.bunifuIconButton1.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // bunifuIconButton2
+            // 
+            this.bunifuIconButton2.AllowAnimations = true;
+            this.bunifuIconButton2.AllowBorderColorChanges = true;
+            this.bunifuIconButton2.AllowMouseEffects = true;
+            this.bunifuIconButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuIconButton2.AnimationSpeed = 200;
+            this.bunifuIconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuIconButton2.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuIconButton2.BorderColor = System.Drawing.Color.White;
+            this.bunifuIconButton2.BorderRadius = 1;
+            this.bunifuIconButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.bunifuIconButton2.BorderThickness = 1;
+            this.bunifuIconButton2.ColorContrastOnClick = 30;
+            this.bunifuIconButton2.ColorContrastOnHover = 30;
+            this.bunifuIconButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.bunifuIconButton2.CustomizableEdges = borderEdges4;
+            this.bunifuIconButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuIconButton2.Image = global::CoffeShop.Properties.Resources.Chart;
+            this.bunifuIconButton2.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.bunifuIconButton2.Location = new System.Drawing.Point(7, 215);
+            this.bunifuIconButton2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.bunifuIconButton2.Name = "bunifuIconButton2";
+            this.bunifuIconButton2.RoundBorders = true;
+            this.bunifuIconButton2.ShowBorders = true;
+            this.bunifuIconButton2.Size = new System.Drawing.Size(55, 55);
+            this.bunifuIconButton2.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.bunifuIconButton2.TabIndex = 0;
+            this.bunifuIconButton2.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // bunifuElipse
             // 
@@ -792,26 +941,26 @@ namespace CoffeShop
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties4;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -907,7 +1056,7 @@ namespace CoffeShop
             this.Text = "CoffeeShop";
             this.Load += new System.EventHandler(this.CoffeeShop_Load);
             bunifuPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgPerson)).EndInit();
+            this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.bunifuPanel4.ResumeLayout(false);
@@ -948,7 +1097,6 @@ namespace CoffeShop
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
-        private Bunifu.UI.WinForms.BunifuPictureBox imgPerson;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -985,6 +1133,11 @@ namespace CoffeShop
         private System.Windows.Forms.Label label12;
         private System.Drawing.Printing.PrintDocument printDocument;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnPerson;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnUser;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton2;
     }
 }
 

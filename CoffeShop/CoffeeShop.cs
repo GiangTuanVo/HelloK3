@@ -1,24 +1,20 @@
 ﻿using CoffeShop.Model;
 using CoffeShop.SubForm;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CoffeShop
 {
     public partial class CoffeeShop : Form
     {
-        
+        private string path = Application.StartupPath + "\\file";
         public CoffeeShop()
         {
             InitializeComponent();
+            ReadData read = new ReadData(path);
         }
 
         private void CoffeeShop_Load(object sender, EventArgs e)
@@ -46,6 +42,9 @@ namespace CoffeShop
                     }
                 }
             }
+
+            Login login = new Login();
+            login.ShowDialog();
         }
 
         private void Table_Click(object sender, EventArgs e)
@@ -194,6 +193,17 @@ namespace CoffeShop
         {
             memoryimg = new Bitmap(panel.Width, panel.Height);
             panel.DrawToBitmap(memoryimg, new Rectangle(0, 0, panel.Width, panel.Height));
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void btnPerson_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

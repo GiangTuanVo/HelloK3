@@ -35,14 +35,16 @@ namespace CoffeShop.SubForm
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,18 +54,41 @@ namespace CoffeShop.SubForm
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtConfirm = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.txtConfirm = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // bunifuElipse
+            // 
+            this.bunifuElipse.ElipseRadius = 40;
+            this.bunifuElipse.TargetControl = this;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuPanel1.BorderRadius = 40;
+            this.bunifuPanel1.BorderThickness = 2;
+            this.bunifuPanel1.Controls.Add(this.tableLayoutPanel1);
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.Padding = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(650, 350);
+            this.bunifuPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -73,12 +98,12 @@ namespace CoffeShop.SubForm
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 350);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(610, 344);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -87,7 +112,7 @@ namespace CoffeShop.SubForm
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 340);
+            this.pictureBox1.Size = new System.Drawing.Size(264, 334);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -100,11 +125,11 @@ namespace CoffeShop.SubForm
             this.tableLayoutPanel2.Controls.Add(this.btnLogin, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.txtName, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.txtPassword, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtConfirm, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(297, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(279, 5);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 7;
@@ -115,7 +140,8 @@ namespace CoffeShop.SubForm
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(348, 340);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(326, 334);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -128,12 +154,12 @@ namespace CoffeShop.SubForm
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.chkAccount, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 273);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 267);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(346, 32);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(324, 31);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // label4
@@ -166,7 +192,7 @@ namespace CoffeShop.SubForm
             this.chkAccount.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.chkAccount.Cursor = System.Windows.Forms.Cursors.Default;
             this.chkAccount.CustomCheckmarkImage = null;
-            this.chkAccount.Location = new System.Drawing.Point(3, 6);
+            this.chkAccount.Location = new System.Drawing.Point(3, 5);
             this.chkAccount.MinimumSize = new System.Drawing.Size(17, 17);
             this.chkAccount.Name = "chkAccount";
             this.chkAccount.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
@@ -200,7 +226,6 @@ namespace CoffeShop.SubForm
             this.chkAccount.TabIndex = 0;
             this.chkAccount.ThreeState = false;
             this.chkAccount.ToolTipText = null;
-            this.chkAccount.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.chkAccount_CheckedChanged);
             // 
             // btnLogin
             // 
@@ -210,9 +235,9 @@ namespace CoffeShop.SubForm
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(3, 207);
+            this.btnLogin.Location = new System.Drawing.Point(3, 203);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(342, 62);
+            this.btnLogin.Size = new System.Drawing.Size(320, 60);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.TabStop = false;
             this.btnLogin.Text = "LOGIN TO APPLICATION";
@@ -250,7 +275,7 @@ namespace CoffeShop.SubForm
             this.txtName.IconRight = null;
             this.txtName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(3, 54);
+            this.txtName.Location = new System.Drawing.Point(3, 53);
             this.txtName.MaxLength = 32767;
             this.txtName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtName.Modified = false;
@@ -286,7 +311,7 @@ namespace CoffeShop.SubForm
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
             this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(342, 45);
+            this.txtName.Size = new System.Drawing.Size(320, 44);
             this.txtName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtName.TabIndex = 2;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -304,91 +329,54 @@ namespace CoffeShop.SubForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Location = new System.Drawing.Point(1, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 51);
+            this.label1.Size = new System.Drawing.Size(324, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login Form";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPassword
+            // tableLayoutPanel3
             // 
-            this.txtPassword.AcceptsReturn = false;
-            this.txtPassword.AcceptsTab = false;
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.AnimationSpeed = 200;
-            this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtPassword.AutoSizeHeight = true;
-            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPassword.BackgroundImage")));
-            this.txtPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtPassword.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtPassword.BorderRadius = 20;
-            this.txtPassword.BorderThickness = 1;
-            this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.FillColor = System.Drawing.Color.White;
-            this.txtPassword.HideSelection = true;
-            this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
-            this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.IconPadding = 8;
-            this.txtPassword.IconRight = null;
-            this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(3, 105);
-            this.txtPassword.MaxLength = 32767;
-            this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtPassword.Modified = false;
-            this.txtPassword.Multiline = false;
-            this.txtPassword.Name = "txtPassword";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties8;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.txtPassword.PasswordChar = '\0';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.ReadOnly = false;
-            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.SelectionLength = 0;
-            this.txtPassword.SelectionStart = 0;
-            this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(342, 45);
-            this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPassword.TextMarginBottom = 0;
-            this.txtPassword.TextMarginLeft = 3;
-            this.txtPassword.TextMarginTop = 1;
-            this.txtPassword.TextPlaceholder = "Password";
-            this.txtPassword.UseSystemPasswordChar = false;
-            this.txtPassword.WordWrap = true;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(1, 300);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(324, 33);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Not a member?";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.CadetBlue;
+            this.label3.Location = new System.Drawing.Point(165, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Sigup now";
             // 
             // txtConfirm
             // 
@@ -421,7 +409,7 @@ namespace CoffeShop.SubForm
             this.txtConfirm.IconRight = null;
             this.txtConfirm.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirm.Lines = new string[0];
-            this.txtConfirm.Location = new System.Drawing.Point(3, 156);
+            this.txtConfirm.Location = new System.Drawing.Point(3, 153);
             this.txtConfirm.MaxLength = 32767;
             this.txtConfirm.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtConfirm.Modified = false;
@@ -457,9 +445,9 @@ namespace CoffeShop.SubForm
             this.txtConfirm.SelectionLength = 0;
             this.txtConfirm.SelectionStart = 0;
             this.txtConfirm.ShortcutsEnabled = true;
-            this.txtConfirm.Size = new System.Drawing.Size(342, 45);
+            this.txtConfirm.Size = new System.Drawing.Size(320, 44);
             this.txtConfirm.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtConfirm.TabIndex = 1;
+            this.txtConfirm.TabIndex = 2;
             this.txtConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtConfirm.TextMarginBottom = 0;
             this.txtConfirm.TextMarginLeft = 3;
@@ -467,52 +455,86 @@ namespace CoffeShop.SubForm
             this.txtConfirm.TextPlaceholder = "Confirm password";
             this.txtConfirm.UseSystemPasswordChar = false;
             this.txtConfirm.WordWrap = true;
+            this.txtConfirm.TextChange += new System.EventHandler(this.txtConfirm_TextChange);
             // 
-            // tableLayoutPanel3
+            // txtPassword
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtPassword.AcceptsReturn = false;
+            this.txtPassword.AcceptsTab = false;
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(1, 307);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(346, 32);
-            this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Not a member?";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label3.Location = new System.Drawing.Point(176, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Sigup now";
-            // 
-            // bunifuElipse
-            // 
-            this.bunifuElipse.ElipseRadius = 40;
-            this.bunifuElipse.TargetControl = this;
+            this.txtPassword.AnimationSpeed = 200;
+            this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtPassword.AutoSizeHeight = true;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPassword.BackgroundImage")));
+            this.txtPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtPassword.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtPassword.BorderRadius = 20;
+            this.txtPassword.BorderThickness = 1;
+            this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.FillColor = System.Drawing.Color.White;
+            this.txtPassword.HideSelection = true;
+            this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
+            this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.IconPadding = 8;
+            this.txtPassword.IconRight = null;
+            this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.Lines = new string[0];
+            this.txtPassword.Location = new System.Drawing.Point(3, 103);
+            this.txtPassword.MaxLength = 32767;
+            this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtPassword.Modified = false;
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties8;
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.ReadOnly = false;
+            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.SelectionLength = 0;
+            this.txtPassword.SelectionStart = 0;
+            this.txtPassword.ShortcutsEnabled = true;
+            this.txtPassword.Size = new System.Drawing.Size(320, 44);
+            this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPassword.TextMarginBottom = 0;
+            this.txtPassword.TextMarginLeft = 3;
+            this.txtPassword.TextMarginTop = 1;
+            this.txtPassword.TextPlaceholder = "Password";
+            this.txtPassword.UseSystemPasswordChar = false;
+            this.txtPassword.WordWrap = true;
+            this.txtPassword.TextChange += new System.EventHandler(this.txtPassword_TextChange);
             // 
             // Login
             // 
@@ -520,12 +542,14 @@ namespace CoffeShop.SubForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(650, 350);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
+            this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -539,21 +563,21 @@ namespace CoffeShop.SubForm
         }
 
         #endregion
-
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label4;
+        private Bunifu.UI.WinForms.BunifuCheckBox chkAccount;
+        private System.Windows.Forms.Button btnLogin;
         private Bunifu.UI.WinForms.BunifuTextBox txtName;
-        private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
-        private Bunifu.UI.WinForms.BunifuTextBox txtConfirm;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private Bunifu.UI.WinForms.BunifuCheckBox chkAccount;
-        private System.Windows.Forms.Label label4;
+        private Bunifu.UI.WinForms.BunifuTextBox txtConfirm;
+        private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
     }
 }
