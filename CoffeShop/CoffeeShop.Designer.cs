@@ -32,14 +32,14 @@ namespace CoffeShop
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CoffeeShop));
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPerson = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.btnUser = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
@@ -61,8 +61,8 @@ namespace CoffeShop
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnOrder = new System.Windows.Forms.Button();
             this.btnPayment = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.uiLine4 = new Sunny.UI.UILine();
             this.uiLine5 = new Sunny.UI.UILine();
@@ -92,6 +92,7 @@ namespace CoffeShop
             this.lblTable = new System.Windows.Forms.Label();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
+            this.uiLine6 = new Sunny.UI.UILine();
             bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
@@ -168,11 +169,11 @@ namespace CoffeShop
             this.btnPerson.ColorContrastOnClick = 30;
             this.btnPerson.ColorContrastOnHover = 30;
             this.btnPerson.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnPerson.CustomizableEdges = borderEdges1;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnPerson.CustomizableEdges = borderEdges9;
             this.btnPerson.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPerson.Image = global::CoffeShop.Properties.Resources.Person;
             this.btnPerson.ImageMargin = new System.Windows.Forms.Padding(0);
@@ -202,11 +203,11 @@ namespace CoffeShop
             this.btnUser.ColorContrastOnClick = 30;
             this.btnUser.ColorContrastOnHover = 30;
             this.btnUser.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnUser.CustomizableEdges = borderEdges2;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnUser.CustomizableEdges = borderEdges10;
             this.btnUser.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUser.Image = global::CoffeShop.Properties.Resources.password;
             this.btnUser.ImageMargin = new System.Windows.Forms.Padding(0);
@@ -236,11 +237,11 @@ namespace CoffeShop
             this.bunifuIconButton1.ColorContrastOnClick = 30;
             this.bunifuIconButton1.ColorContrastOnHover = 30;
             this.bunifuIconButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuIconButton1.CustomizableEdges = borderEdges3;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.bunifuIconButton1.CustomizableEdges = borderEdges11;
             this.bunifuIconButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuIconButton1.Image = global::CoffeShop.Properties.Resources.Database;
             this.bunifuIconButton1.ImageMargin = new System.Windows.Forms.Padding(0);
@@ -270,11 +271,11 @@ namespace CoffeShop
             this.bunifuIconButton2.ColorContrastOnClick = 30;
             this.bunifuIconButton2.ColorContrastOnHover = 30;
             this.bunifuIconButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuIconButton2.CustomizableEdges = borderEdges4;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.bunifuIconButton2.CustomizableEdges = borderEdges12;
             this.bunifuIconButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuIconButton2.Image = global::CoffeShop.Properties.Resources.Chart;
             this.bunifuIconButton2.ImageMargin = new System.Windows.Forms.Padding(0);
@@ -477,12 +478,12 @@ namespace CoffeShop
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(15)))), ((int)(((byte)(7)))));
             this.label11.Location = new System.Drawing.Point(6, 661);
             this.label11.Margin = new System.Windows.Forms.Padding(1);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 24);
+            this.label11.Size = new System.Drawing.Size(138, 24);
             this.label11.TabIndex = 4;
             this.label11.Text = "Layout Table";
             // 
@@ -495,8 +496,8 @@ namespace CoffeShop
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.Controls.Add(this.btnOrder, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.btnPayment, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button3, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button4, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnClear, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnUpdate, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(5, 596);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
@@ -541,37 +542,39 @@ namespace CoffeShop
             this.btnPayment.UseVisualStyleBackColor = true;
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
-            // button3
+            // btnClear
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::CoffeShop.Properties.Resources.Broom;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(231, 3);
-            this.button3.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 54);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "         CLEAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Image = global::CoffeShop.Properties.Resources.Broom;
+            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClear.Location = new System.Drawing.Point(231, 3);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(141, 54);
+            this.btnClear.TabIndex = 0;
+            this.btnClear.Text = "         CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button4
+            // btnUpdate
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::CoffeShop.Properties.Resources.Sync;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(30, 3);
-            this.button4.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 54);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "         UPDATE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Image = global::CoffeShop.Properties.Resources.Sync;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(30, 3);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(141, 54);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.Text = "         UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // flpTable
             // 
@@ -631,15 +634,17 @@ namespace CoffeShop
             // 
             this.tableLayoutPanel9.ColumnCount = 1;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.flpOrder, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel7, 0, 4);
+            this.tableLayoutPanel9.Controls.Add(this.uiLine6, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.flpOrder, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel7, 0, 5);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel11, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel11, 0, 4);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel12, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 5;
+            this.tableLayoutPanel9.RowCount = 6;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -652,11 +657,11 @@ namespace CoffeShop
             // 
             this.flpOrder.AutoScroll = true;
             this.flpOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpOrder.Location = new System.Drawing.Point(0, 95);
+            this.flpOrder.Location = new System.Drawing.Point(0, 96);
             this.flpOrder.Margin = new System.Windows.Forms.Padding(0);
             this.flpOrder.Name = "flpOrder";
             this.flpOrder.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.flpOrder.Size = new System.Drawing.Size(804, 454);
+            this.flpOrder.Size = new System.Drawing.Size(804, 453);
             this.flpOrder.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -815,9 +820,10 @@ namespace CoffeShop
             // 
             // tableLayoutPanel12
             // 
-            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel12.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -850,7 +856,7 @@ namespace CoffeShop
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::CoffeShop.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(712, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 20, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 0, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -941,26 +947,26 @@ namespace CoffeShop
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties12;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1010,11 +1016,11 @@ namespace CoffeShop
             this.uiLine1.FillColor = System.Drawing.Color.Transparent;
             this.uiLine1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiLine1.LineColor = System.Drawing.Color.Gray;
-            this.uiLine1.Location = new System.Drawing.Point(5, 49);
-            this.uiLine1.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.uiLine1.Location = new System.Drawing.Point(0, 49);
+            this.uiLine1.Margin = new System.Windows.Forms.Padding(0);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
-            this.uiLine1.Size = new System.Drawing.Size(799, 1);
+            this.uiLine1.Size = new System.Drawing.Size(804, 1);
             this.uiLine1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLine1.TabIndex = 1;
             this.uiLine1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -1023,11 +1029,11 @@ namespace CoffeShop
             // 
             this.lblTable.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblTable.AutoSize = true;
-            this.lblTable.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTable.Location = new System.Drawing.Point(369, 24);
+            this.lblTable.Font = new System.Drawing.Font("Eras Demi ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTable.Location = new System.Drawing.Point(353, 12);
             this.lblTable.Margin = new System.Windows.Forms.Padding(1);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(66, 24);
+            this.lblTable.Size = new System.Drawing.Size(97, 36);
             this.lblTable.TabIndex = 1;
             this.lblTable.Text = "Table";
             // 
@@ -1040,6 +1046,22 @@ namespace CoffeShop
             this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog.Icon")));
             this.printPreviewDialog.Name = "printPreviewDialog";
             this.printPreviewDialog.Visible = false;
+            // 
+            // uiLine6
+            // 
+            this.uiLine6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiLine6.BackColor = System.Drawing.Color.Transparent;
+            this.uiLine6.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiLine6.LineColor = System.Drawing.Color.Gray;
+            this.uiLine6.Location = new System.Drawing.Point(0, 95);
+            this.uiLine6.Margin = new System.Windows.Forms.Padding(0);
+            this.uiLine6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine6.Name = "uiLine6";
+            this.uiLine6.Size = new System.Drawing.Size(804, 1);
+            this.uiLine6.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine6.TabIndex = 1;
+            this.uiLine6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // CoffeeShop
             // 
@@ -1117,8 +1139,8 @@ namespace CoffeShop
         private System.Windows.Forms.Label lblTable;
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Button btnPayment;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnUpdate;
         private Sunny.UI.UILine uiLine4;
         private Sunny.UI.UILine uiLine5;
         private System.Windows.Forms.Panel PrintPanel;
@@ -1138,6 +1160,7 @@ namespace CoffeShop
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnUser;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton2;
+        private Sunny.UI.UILine uiLine6;
     }
 }
 

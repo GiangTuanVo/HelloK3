@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace CoffeShop.SubForm
 {
-    public partial class ShowInfo : Form
+    public partial class FrmInfo : Form
     {
         public string ItemInfo
         {
@@ -16,7 +16,7 @@ namespace CoffeShop.SubForm
             get { return lblInfo.ForeColor; }
             set { lblInfo.ForeColor = value; }
         }
-        public ShowInfo()
+        public FrmInfo()
         {
             InitializeComponent();
         }

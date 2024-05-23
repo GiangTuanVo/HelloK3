@@ -85,17 +85,17 @@
   <ItemGroup>
     <Compile Include="Model\ReadData.cs" />
     <Compile Include="Model\Account.cs" />
-    <Compile Include="SubForm\Login.cs">
+    <Compile Include="SubForm\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForm\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="SubForm\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForm\ShowInfo.cs">
+    <Compile Include="SubForm\FrmInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForm\ShowInfo.Designer.cs">
-      <DependentUpon>ShowInfo.cs</DependentUpon>
+    <Compile Include="SubForm\FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\DrinkControl.cs">
       <SubType>UserControl</SubType>
@@ -124,11 +124,11 @@
     <Compile Include="UserControl\Table.Designer.cs">
       <DependentUpon>Table.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SubForm\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="SubForm\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForm\ShowInfo.resx">
-      <DependentUpon>ShowInfo.cs</DependentUpon>
+    <EmbeddedResource Include="SubForm\FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\DrinkControl.resx">
       <DependentUpon>DrinkControl.cs</DependentUpon>
@@ -230,13 +230,7 @@
     <None Include="Resources\theme.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\login.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\password.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sigup.png" />
@@ -258,6 +252,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

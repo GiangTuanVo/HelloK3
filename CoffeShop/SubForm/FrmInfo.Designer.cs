@@ -1,7 +1,7 @@
 ﻿
 namespace CoffeShop.SubForm
 {
-    partial class ShowInfo
+    partial class FrmInfo
     {
         /// <summary>
         /// Required designer variable.

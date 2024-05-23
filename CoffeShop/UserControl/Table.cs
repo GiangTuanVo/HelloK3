@@ -13,12 +13,6 @@ namespace CoffeShop
             get { return lblTableName.Text; }
             set { lblTableName.Text = value; }
         }
-        private List<OrderControl> orders;
-        public List<OrderControl> Orders
-        {
-            get { return orders; }
-            set { orders = value; }
-        }
         public Table()
         {
             ListOrderControl = new List<OrderControl>();

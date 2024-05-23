@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindownsFormK3", "WindownsFormK3\WindownsFormK3.csproj", "{5F3F63DF-4928-4D1C-A2D1-AF99B8C25542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScadaTest", "ScadaTest\ScadaTest.csproj", "{D63DBFE9-F270-42B2-B1C5-D883FF028860}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5F3F63DF-4928-4D1C-A2D1-AF99B8C25542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3F63DF-4928-4D1C-A2D1-AF99B8C25542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3F63DF-4928-4D1C-A2D1-AF99B8C25542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

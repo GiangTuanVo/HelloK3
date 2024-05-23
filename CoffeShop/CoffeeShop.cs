@@ -13,15 +13,18 @@ namespace CoffeShop
         private string path = Application.StartupPath + "\\file";
         public CoffeeShop()
         {
-            InitializeComponent();
-            ReadData read = new ReadData(path);
+            InitializeComponent();   
         }
 
         private void CoffeeShop_Load(object sender, EventArgs e)
         {
+            //Read data from file CSV
+            ReadData read = new ReadData(path);
+
+            //Add table
             for (int i = 1; i <= 5; i++)
             {
-                Table table = new Table();
+                Table table = new Table();//user control
                 table.ItemTable = $"Table{i}";
                 table.Click += Table_Click;
                 flpTable.Controls.Add(table);
@@ -43,12 +46,13 @@ namespace CoffeShop
                 }
             }
 
-            Login login = new Login();
+            FrmLogin login = new FrmLogin();
             login.ShowDialog();
         }
 
         private void Table_Click(object sender, EventArgs e)
         {
+            flpOrder.Controls.Clear();
             Table table = (Table)sender;
             if (table != null)
             {
@@ -131,22 +135,26 @@ namespace CoffeShop
                 {
                     foreach (Table item in flpTable.Controls)
                     {
-                        if (item.IsOrder)
-                        {
-                            ShowInfo info = new ShowInfo();
-                            info.ItemInfo = "Table ordered, please save table";
-                            info.ShowDialog();
-                            return;
-                        }
                         if (item.ItemTable == lblTable.Text)
                         {
-                            foreach (OrderControl control in flpOrder.Controls)
+                            if (item.IsOrder)
                             {
-                                item.ListOrderControl.Add(control);
+                                FrmInfo info = new FrmInfo();
+                                info.ItemInfo = "Table ordered, please save table";
+                                info.ShowDialog();
+                                return;
                             }
-                            item.IsOrder = true;
-                            flpOrder.Controls.Clear();
-                            lblTable.Text = "";
+                            else
+                            {
+                                foreach (OrderControl control in flpOrder.Controls)
+                                {
+                                    item.ListOrderControl.Add(control);
+                                }
+                                item.IsOrder = true;
+                                flpOrder.Controls.Clear();
+                                lblTable.Text = "";
+                                break;
+                            }
                         }
                     }
                 }
@@ -172,6 +180,20 @@ namespace CoffeShop
         private void btnPayment_Click(object sender, EventArgs e)
         {
             Print(PrintPanel);
+            flpOrder.Controls.Clear();
+            if (flpTable.Controls.Count > 0)
+            {
+                foreach (Table item in flpTable.Controls)
+                {
+                    if (item.IsOrder && item.ItemTable == lblTable.Text)
+                    {
+                        item.ListOrderControl.Clear();
+                        item.IsOrder = false;
+                        break;
+                    }
+                }
+            }
+
         }
         private void Print(Panel panel)
         {
@@ -197,13 +219,53 @@ namespace CoffeShop
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            FrmLogin login = new FrmLogin();
             login.ShowDialog();
         }
 
         private void btnPerson_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (flpOrder.Controls.Count > 0)
+            {
+                if (flpTable.Controls.Count > 0)
+                {
+                    foreach (Table item in flpTable.Controls)
+                    {
+                        if (item.ItemTable == lblTable.Text)
+                        {
+                            if (item.IsOrder)
+                            {
+                                item.ListOrderControl.Clear();
+                                foreach (OrderControl control in flpOrder.Controls)
+                                {
+                                    item.ListOrderControl.Add(control);
+                                }
+                                item.IsOrder = true;
+                                flpOrder.Controls.Clear();
+                                lblTable.Text = "";
+                                break;
+                            }
+                            else
+                            {
+                                FrmInfo info = new FrmInfo();
+                                info.ItemInfo = "Table not ordered, please create table";
+                                info.ShowDialog();
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            flpOrder.Controls.Clear();
         }
     }
 }
