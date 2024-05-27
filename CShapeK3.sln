@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindownsFormK3", "WindownsF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScadaTest", "ScadaTest\ScadaTest.csproj", "{D63DBFE9-F270-42B2-B1C5-D883FF028860}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShapePLC", "CShapePLC\CShapePLC.csproj", "{42FB0BDF-41F4-4F63-AD39-41D3A6523030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D63DBFE9-F270-42B2-B1C5-D883FF028860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FB0BDF-41F4-4F63-AD39-41D3A6523030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FB0BDF-41F4-4F63-AD39-41D3A6523030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FB0BDF-41F4-4F63-AD39-41D3A6523030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FB0BDF-41F4-4F63-AD39-41D3A6523030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
