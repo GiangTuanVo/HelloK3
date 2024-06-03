@@ -13,10 +13,10 @@ using LibConnection.Profinet.Melsec;
 
 namespace CShapePLC
 {
-    public partial class FrmMain : Form
+    public partial class FrmMelcSerial : Form
     {
         MelsecFxSerial FxSerial;
-        public FrmMain()
+        public FrmMelcSerial()
         {
             InitializeComponent();
         }
@@ -57,7 +57,7 @@ namespace CShapePLC
         {
             if (FxSerial.IsOpen())
             {
-               FxSerial.Close();
+                FxSerial.Close();
             }
         }
 
@@ -66,13 +66,13 @@ namespace CShapePLC
             OperateResult<bool> Read_X0 = FxSerial.ReadBool("X0");
             if (Read_X0.IsSuccess)
             {
-                if(Read_X0.Content)
+                if (Read_X0.Content)
                     picReadX0.Image = Properties.Resources.Light_On;
                 else
                     picReadX0.Image = Properties.Resources.Light_Off;
             }
             OperateResult<bool> Read_X1 = FxSerial.ReadBool("X1");
-            
+
             if (Read_X1.IsSuccess)
             {
                 if (Read_X1.Content)
@@ -113,7 +113,7 @@ namespace CShapePLC
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            if(txtM0.Text!=""&& txtM1.Text != "")
+            if (txtM0.Text != "" && txtM1.Text != "")
             {
                 OperateResult<bool> Read_M0 = FxSerial.ReadBool(txtM0.Text);
                 if (Read_M0.IsSuccess)
@@ -163,7 +163,7 @@ namespace CShapePLC
                     {
                         shortData[i] = short.Parse(shortText[i]);
                     }
-                    OperateResult result = FxSerial.Write(txtAddrDataWrite.Text, shortData);
+                    Task<OperateResult> result = FxSerial.WriteAsync(txtAddrDataWrite.Text, shortData);
                     break;
                 case "Int32":
                     string[] int32Text = txtValueDataWrite.Text.Split(',');
@@ -172,7 +172,7 @@ namespace CShapePLC
                     {
                         int32Data[i] = Int32.Parse(int32Text[i]);
                     }
-                    result = FxSerial.Write(txtAddrDataWrite.Text, int32Data);
+                    result = FxSerial.WriteAsync(txtAddrDataWrite.Text, int32Data);
                     break;
                 case "Int64":
                     break;

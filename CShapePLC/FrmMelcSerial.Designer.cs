@@ -1,7 +1,7 @@
 ﻿
 namespace CShapePLC
 {
-    partial class FrmMain
+    partial class FrmMelcSerial
     {
         /// <summary>
         /// Required designer variable.

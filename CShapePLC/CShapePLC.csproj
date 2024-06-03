@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\..\..\UI WinForms\Library\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
     <Reference Include="LibConnection">
       <HintPath>..\..\..\..\UI WinForms\Library\LibConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI">
+      <HintPath>..\..\..\..\UI WinForms\Library\SunnyUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,17 +55,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmMain.cs">
+    <Compile Include="FormModbus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <Compile Include="FormModbus.Designer.cs">
+      <DependentUpon>FormModbus.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMelcMXComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMelcMXComponent.Designer.cs">
+      <DependentUpon>FrmMelcMXComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMelcSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMelcSerial.Designer.cs">
+      <DependentUpon>FrmMelcSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReadPLC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <Compile Include="Sample\Control\UserControlReadWrite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sample\Control\UserControlReadWrite.designer.cs">
+      <DependentUpon>UserControlReadWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormMelsecComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormMelsecComponent.designer.cs">
+      <DependentUpon>FormMelsecComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormMelsecSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormMelsecSerial.designer.cs">
+      <DependentUpon>FormMelsecSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormKeyenceSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormKeyenceSerial.designer.cs">
+      <DependentUpon>FormKeyenceSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormMelsecTcp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormMelsecTcp.designer.cs">
+      <DependentUpon>FormMelsecTcp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormModbusRtu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormModbusRtu.Designer.cs">
+      <DependentUpon>FormModbusRtu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\FormModbusTcp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\FormModbusTcp.designer.cs">
+      <DependentUpon>FormModbusTcp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\Model\DemoUtils.cs" />
+    <Compile Include="Sample\Model\UserType.cs" />
+    <EmbeddedResource Include="FormModbus.resx">
+      <DependentUpon>FormModbus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMelcMXComponent.resx">
+      <DependentUpon>FrmMelcMXComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMelcSerial.resx">
+      <DependentUpon>FrmMelcSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,6 +140,27 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sample\Control\UserControlReadWrite.resx">
+      <DependentUpon>UserControlReadWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormMelsecComponent.resx">
+      <DependentUpon>FormMelsecComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormMelsecSerial.resx">
+      <DependentUpon>FormMelsecSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormKeyenceSerial.resx">
+      <DependentUpon>FormKeyenceSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormMelsecTcp.resx">
+      <DependentUpon>FormMelsecTcp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormModbusRtu.resx">
+      <DependentUpon>FormModbusRtu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\FormModbusTcp.resx">
+      <DependentUpon>FormModbusTcp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
