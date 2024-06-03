@@ -73,7 +73,14 @@
     <Compile Include="FrmMelcSerial.Designer.cs">
       <DependentUpon>FrmMelcSerial.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModbusTcp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModbusTcp.Designer.cs">
+      <DependentUpon>FrmModbusTcp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ReadPLC.cs" />
+    <Compile Include="Model\Warning.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sample\Control\UserControlReadWrite.cs">
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMelcSerial.resx">
       <DependentUpon>FrmMelcSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModbusTcp.resx">
+      <DependentUpon>FrmModbusTcp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
